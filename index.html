@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IoT Nexus — تجربة تفاعلية احترافية لاستكشاف إنترنت الأشياء، أجهزته، بروتوكولاته، تطبيقاته ومستقبله.">
+  <title>IoT Nexus | عالم إنترنت الأشياء</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="grid-bg"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="IoT Nexus">
+      <span class="brand-orb"><span></span></span>
+      <span><b>IoT</b> NEXUS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">المفهوم</a>
+      <a href="#architecture">البنية</a>
+      <a href="#protocols">البروتوكولات</a>
+      <a href="#applications">التطبيقات</a>
+      <a href="#future">المستقبل</a>
+    </nav>
+    <button class="menu-btn" aria-label="فتح القائمة">☰</button>
+    <a class="nav-cta" href="#lab">مختبر IoT ↗</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> FUTURE CONNECTED WORLD / 2026</div>
+        <h1>العالم أصبح<br><span>جهازًا واحدًا.</span></h1>
+        <p class="hero-text">إنترنت الأشياء ليس مجرد أجهزة متصلة بالإنترنت؛ إنه منظومة تجعل الأشياء <strong>تشعر، تتواصل، تحلل، وتتخذ قرارات.</strong></p>
+        <div class="hero-actions">
+          <a href="#architecture" class="btn primary">استكشف المنظومة <span>↘</span></a>
+          <a href="#ideas" class="btn ghost">أفكار مستقبلية</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong class="counter" data-target="4.2">0</strong><small>B+</small><span>جهاز متصل — تصور مستقبلي</span></div>
+          <div><strong>24/7</strong><span>مراقبة وبيانات لحظية</span></div>
+          <div><strong>∞</strong><span>سيناريوهات الاستخدام</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="core">
+          <div class="core-ring"></div>
+          <div class="core-icon">⌁</div>
+          <span>IoT<br><b>CORE</b></span>
+        </div>
+        <div class="node n1"><b>AI</b><small>تحليل</small></div>
+        <div class="node n2"><b>5G</b><small>اتصال</small></div>
+        <div class="node n3"><b>EDGE</b><small>معالجة</small></div>
+        <div class="node n4"><b>IoT</b><small>حساسات</small></div>
+        <div class="connection c1"></div><div class="connection c2"></div>
+        <div class="connection c3"></div><div class="connection c4"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <span class="section-number">01 / CONCEPT</span>
+        <h2>ما هو <span>إنترنت الأشياء؟</span></h2>
+        <p>شبكة من الأشياء الفيزيائية التي تجمع البيانات من العالم الحقيقي، وتتبادلها عبر الشبكات، ثم تحولها إلى معرفة وقرارات.</p>
+      </div>
+      <div class="concept-grid">
+        <article class="glass-card big reveal">
+          <span class="card-index">01</span>
+          <div class="card-icon">◉</div>
+          <h3>استشعار</h3>
+          <p>حساسات الحرارة، الحركة، الضوء، الضغط، الموقع والصوت تحول الواقع إلى بيانات رقمية.</p>
+          <div class="mini-code">SENSOR → DATA</div>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-index">02</span>
+          <div class="card-icon">⇄</div>
+          <h3>اتصال</h3>
+          <p>Wi‑Fi، Bluetooth، Zigbee، LoRaWAN، 4G/5G وغيرها تنقل البيانات.</p>
+          <div class="mini-code">DEVICE ↔ NETWORK</div>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-index">03</span>
+          <div class="card-icon">⌬</div>
+          <h3>تحليل</h3>
+          <p>Cloud وEdge وAI يحولون ملايين القراءات إلى معلومات قابلة للاستخدام.</p>
+          <div class="mini-code">DATA → INSIGHT</div>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-index">04</span>
+          <div class="card-icon">⚡</div>
+          <h3>فعل ذكي</h3>
+          <p>النظام لا يكتفي بالمراقبة؛ يمكنه تشغيل محرك، تعديل إضاءة أو إرسال تنبيه.</p>
+          <div class="mini-code">INSIGHT → ACTION</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="architecture" class="section architecture">
+      <div class="section-heading reveal">
+        <span class="section-number">02 / ARCHITECTURE</span>
+        <h2>رحلة البيانات من <span>العالم إلى القرار</span></h2>
+      </div>
+      <div class="pipeline reveal">
+        <div class="layer">
+          <div class="layer-tag">LAYER 01</div><div class="layer-symbol">◌</div>
+          <h3>الأشياء</h3><p>Sensors / Actuators</p><small>الواقع الفيزيائي</small>
+        </div>
+        <div class="flow">→</div>
+        <div class="layer">
+          <div class="layer-tag">LAYER 02</div><div class="layer-symbol">⌁</div>
+          <h3>الاتصال</h3><p>Wi‑Fi / 5G / LPWAN</p><small>نقل البيانات</small>
+        </div>
+        <div class="flow">→</div>
+        <div class="layer">
+          <div class="layer-tag">LAYER 03</div><div class="layer-symbol">◇</div>
+          <h3>Edge</h3><p>Local Processing</p><small>قرار قريب من الجهاز</small>
+        </div>
+        <div class="flow">→</div>
+        <div class="layer">
+          <div class="layer-tag">LAYER 04</div><div class="layer-symbol">☁</div>
+          <h3>السحابة</h3><p>Storage / Analytics</p><small>تخزين وتحليل واسع</small>
+        </div>
+        <div class="flow">→</div>
+        <div class="layer">
+          <div class="layer-tag">LAYER 05</div><div class="layer-symbol">✦</div>
+          <h3>AI</h3><p>Prediction / Automation</p><small>ذكاء وقرار</small>
+        </div>
+      </div>
+      <div class="data-stream"><span>010101</span><i></i><span>PACKET_09F2</span><i></i><span>AI_INFERENCE</span><i></i><span>ACTION_OK</span></div>
+    </section>
+
+    <section id="protocols" class="section">
+      <div class="section-heading reveal">
+        <span class="section-number">03 / CONNECTIVITY</span>
+        <h2>لغة الأجهزة: <span>البروتوكولات</span></h2>
+        <p>اختيار البروتوكول يعتمد على المدى، الطاقة، السرعة، حجم البيانات وطبيعة المشروع.</p>
+      </div>
+      <div class="protocol-grid reveal">
+        <button class="protocol active" data-protocol="mqtt"><b>MQTT</b><span>خفيف وسريع</span><em>IoT / Telemetry</em></button>
+        <button class="protocol" data-protocol="coap"><b>CoAP</b><span>للأجهزة محدودة الموارد</span><em>Constrained Devices</em></button>
+        <button class="protocol" data-protocol="lorawan"><b>LoRaWAN</b><span>مدى طويل وطاقة منخفضة</span><em>LPWAN</em></button>
+        <button class="protocol" data-protocol="zigbee"><b>Zigbee</b><span>شبكات Mesh ذكية</span><em>Smart Home</em></button>
+        <button class="protocol" data-protocol="http"><b>HTTP</b><span>ويب وواجهات API</span><em>Web Integration</em></button>
+      </div>
+      <div class="protocol-detail glass-card reveal" id="protocolDetail">
+        <div><span class="live-dot"></span> PROTOCOL PROFILE</div>
+        <h3>MQTT <span>Message Queuing Telemetry Transport</span></h3>
+        <p>بروتوكول خفيف يعتمد على نموذج Publisher / Subscriber، ومناسب لنقل القياسات والأحداث بين الأجهزة والخوادم.</p>
+        <div class="detail-tags"><span>TCP/IP</span><span>Publish / Subscribe</span><span>Low Bandwidth</span><span>QoS</span></div>
+      </div>
+    </section>
+
+    <section id="applications" class="section dark-section">
+      <div class="section-heading reveal">
+        <span class="section-number">04 / REAL WORLD</span>
+        <h2>أين يعيش <span>IoT؟</span></h2>
+      </div>
+      <div class="apps-grid">
+        <article class="app-card reveal"><div class="app-number">01</div><div class="app-visual smart-home">⌂<i>●</i><i>●</i><i>●</i></div><h3>المنزل الذكي</h3><p>إضاءة، أقفال، كاميرات، تكييف وطاقة تتفاعل مع المستخدم.</p><a href="#lab">محاكاة النظام ↗</a></article>
+        <article class="app-card reveal"><div class="app-number">02</div><div class="app-visual health">♡<i>72</i></div><h3>الصحة المتصلة</h3><p>أجهزة قابلة للارتداء تراقب المؤشرات وتدعم المتابعة عن بعد.</p><a href="#ideas">فكرة مستقبلية ↗</a></article>
+        <article class="app-card reveal"><div class="app-number">03</div><div class="app-visual city">▦<i>↟</i><i>≈</i></div><h3>المدن الذكية</h3><p>إدارة المرور والمياه والإنارة والنفايات بالاعتماد على البيانات.</p><a href="#ideas">تخيل المدينة ↗</a></article>
+        <article class="app-card reveal"><div class="app-number">04</div><div class="app-visual factory">▥<i>⚙</i></div><h3>الصناعة 4.0</h3><p>الصيانة التنبؤية، خطوط الإنتاج، الجودة وتتبع الأصول.</p><a href="#architecture">شاهد البنية ↗</a></article>
+        <article class="app-card reveal"><div class="app-number">05</div><div class="app-visual farm">♧<i>☁</i></div><h3>الزراعة الذكية</h3><p>رطوبة التربة والطقس والري التلقائي وتحسين الإنتاج.</p><a href="#ideas">فكرة مستقبلية ↗</a></article>
+        <article class="app-card reveal"><div class="app-number">06</div><div class="app-visual energy">ϟ<i>↗</i></div><h3>الطاقة الذكية</h3><p>قياس الاستهلاك، الشبكات الذكية وإدارة الأحمال لحظيًا.</p><a href="#lab">حلّل البيانات ↗</a></article>
+      </div>
+    </section>
+
+    <section id="lab" class="section lab">
+      <div class="section-heading reveal">
+        <span class="section-number">05 / LIVE LAB</span>
+        <h2>مختبر <span>إنترنت الأشياء</span></h2>
+        <p>محاكاة تخيلية لنظام منزل ذكي. غيّر حالة الأجهزة وشاهد لوحة التحكم تتفاعل.</p>
+      </div>
+      <div class="dashboard reveal">
+        <div class="dashboard-head"><div><span class="live-dot"></span> SYSTEM ONLINE</div><span id="clock">00:00:00</span></div>
+        <div class="dash-main">
+          <div class="device-list">
+            <button class="device active" data-device="lights"><span class="device-icon">☼</span><span><b>الإضاءة</b><small>Living Room</small></span><strong>ON</strong></button>
+            <button class="device" data-device="ac"><span class="device-icon">❄</span><span><b>المكيف</b><small>Bedroom</small></span><strong>OFF</strong></button>
+            <button class="device active" data-device="lock"><span class="device-icon">⌑</span><span><b>القفل الذكي</b><small>Main Door</small></span><strong>LOCKED</strong></button>
+            <button class="device active" data-device="water"><span class="device-icon">≈</span><span><b>الري</b><small>Garden</small></span><strong>ON</strong></button>
+          </div>
+          <div class="sensor-panel">
+            <div class="sensor-top"><span>ROOM TELEMETRY</span><b>LIVE</b></div>
+            <div class="gauge-wrap"><div class="gauge"><div><strong id="temp">24.8</strong><small>°C</small></div></div></div>
+            <div class="sensor-bars">
+              <div><span>الرطوبة <b id="humidity">54%</b></span><i><em id="humBar" style="width:54%"></em></i></div>
+              <div><span>جودة الهواء <b id="air">92%</b></span><i><em style="width:92%"></em></i></div>
+              <div><span>استهلاك الطاقة <b id="power">1.84 kW</b></span><i><em id="powerBar" style="width:42%"></em></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="event-log"><span>EVENT LOG</span><p id="eventLog">[LIVE] النظام جاهز — في انتظار أحداث الأجهزة...</p></div>
+      </div>
+    </section>
+
+    <section id="ideas" class="section ideas-section">
+      <div class="section-heading reveal">
+        <span class="section-number">06 / IMAGINATION</span>
+        <h2>أفكار IoT <span>لم تُبنَ بعد</span></h2>
+        <p>نماذج تخيلية يمكن تحويلها إلى مشاريع جامعية أو منتجات مستقبلية.</p>
+      </div>
+      <div class="idea-feature reveal">
+        <div class="idea-copy">
+          <span>CONCEPT 01 / 2040</span>
+          <h3>المدينة التي <span>تتعلم من نفسها</span></h3>
+          <p>شبكة ضخمة تربط إشارات المرور، مواقف السيارات، جودة الهواء، الطاقة والمياه. الذكاء الاصطناعي يتوقع الازدحام قبل حدوثه ويعيد توزيع الموارد تلقائيًا.</p>
+          <div class="idea-stack"><b>IoT</b><b>5G</b><b>Edge AI</b><b>Digital Twin</b></div>
+        </div>
+        <div class="city-map">
+          <div class="map-road r1"></div><div class="map-road r2"></div><div class="map-road r3"></div>
+          <span class="map-node m1">●</span><span class="map-node m2">●</span><span class="map-node m3">●</span><span class="map-node m4">●</span>
+          <div class="map-pulse"></div>
+        </div>
+      </div>
+      <div class="ideas-row">
+        <article class="future-card reveal"><span>02</span><h3>مرآة الصحة الذكية</h3><p>مرآة منزلية تتعرف على مؤشرات عامة وتعرض تذكيرات صحية وتربط البيانات بأجهزة قابلة للارتداء.</p></article>
+        <article class="future-card reveal"><span>03</span><h3>حقيبة لا تنسى</h3><p>حقيبة مدرسية تعرف محتوياتها وتنبّه صاحبها عند نسيان جهاز أو كتاب وتتابع موقعها.</p></article>
+        <article class="future-card reveal"><span>04</span><h3>مزرعة ذاتية القرار</h3><p>شبكة حساسات تتنبأ باحتياج النباتات للماء وتوازن الري والطاقة وفق الطقس والتربة.</p></article>
+      </div>
+    </section>
+
+    <section id="security" class="section security">
+      <div class="section-heading reveal">
+        <span class="section-number">07 / SECURITY</span>
+        <h2>كل اتصال يحتاج <span>حماية</span></h2>
+      </div>
+      <div class="security-layout">
+        <div class="security-wheel reveal">
+          <div class="wheel-center">IoT<br><b>SECURE</b></div>
+          <div class="security-item s1">Identity</div><div class="security-item s2">Encryption</div>
+          <div class="security-item s3">Updates</div><div class="security-item s4">Network</div>
+        </div>
+        <div class="security-list reveal">
+          <div><b>01</b><span><strong>هوية الجهاز</strong><small>لا تثق بأي جهاز قبل التحقق منه.</small></span></div>
+          <div><b>02</b><span><strong>تشفير البيانات</strong><small>حماية البيانات أثناء النقل والتخزين.</small></span></div>
+          <div><b>03</b><span><strong>التحديثات</strong><small>سد الثغرات والحفاظ على البرامج محدثة.</small></span></div>
+          <div><b>04</b><span><strong>تقسيم الشبكة</strong><small>تقليل أثر الاختراق بعزل أجهزة IoT.</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="future" class="section future">
+      <div class="future-banner reveal">
+        <span>THE NEXT INTERFACE</span>
+        <h2>المستقبل ليس متصلًا فقط.<br><strong>إنه <em>واعٍ.</em></strong></h2>
+        <p>عندما تجتمع الحساسات + الشبكات + Edge + Cloud + AI، تتحول الأشياء من أدوات صامتة إلى منظومات تستجيب للعالم من حولها.</p>
+        <a href="#home" class="btn primary">العودة إلى البداية ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-orb"><span></span></span><b>IoT NEXUS</b></div>
+    <p>مشروع تعليمي/تصوري عن إنترنت الأشياء — تصميم ثابت قابل للنشر على Netlify.</p>
+    <span>© 2026 / CONNECT EVERYTHING</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
